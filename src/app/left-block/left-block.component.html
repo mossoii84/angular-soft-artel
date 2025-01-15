@@ -1,8 +1,8 @@
+<div class="left-block-container">
 
 
+    <div class="date-for-left-block"><app-date-today></app-date-today></div>
 
-    <div class="date-for-left-block"><app-date-today></app-date-today>
-    </div>
     <div class="btn-left-block">
         <div class="card flex justify-center">
             <p-select [options]="cities" [(ngModel)]="selectedCity" [checkmark]="true" optionLabel="name" [showClear]="true" 
@@ -14,11 +14,14 @@
 
 <nav>
     <ul>
-        <li><a routerLink="/user" routerLinkActive="active-link">Главная</a></li>
-        <li><a routerLink="/user" routerLinkActive="active-link">Проекты</a></li>
-        <li><a routerLink="/user" routerLinkActive="active-link">Команда</a></li>
-        <li><a routerLink="/user" routerLinkActive="active-link">Канбан</a></li>
-        <li><a routerLink="/user" routerLinkActive="active-link">Итерации</a></li>
+        <li><a routerLink="/user" routerLinkActive="active-link">На согласование: 1</a></li>
+        <li><a routerLink="/user" routerLinkActive="active-link">На ревью: 3</a></li>
+        <li><a routerLink="/user" routerLinkActive="active-link">Для работы : 13</a></li>
+        <li><a routerLink="/user" routerLinkActive="active-link">Черновики: 2</a></li>
     </ul>
-<app-task></app-task>
 </nav>
+
+<app-task></app-task>
+
+
+</div>

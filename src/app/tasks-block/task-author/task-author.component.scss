@@ -4,23 +4,19 @@
     padding: 5px 0;
     justify-content: space-between;
     width: 100%;
-    background-color: rgb(135, 222, 157);
 }
 .for-parenthese {
     display: flex;
     padding:0 10px;
-    border: 1px solid red;
 }
 .for-discription {
     display: flex;
     width: 100%;
     align-items: center;
-    border: 1px solid red;
 }
 .name{
     padding: 0 5px;
 }
 .for-times{
     white-space: nowrap; /* Запрещаем перенос текста */
-    border: 1px solid red;
 }

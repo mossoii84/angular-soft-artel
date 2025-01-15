@@ -1,13 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header-mobile',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive,
-     ],
+  imports: [CommonModule],
   templateUrl: './header-mobile.component.html',
   styleUrl: './header-mobile.component.scss'
 })

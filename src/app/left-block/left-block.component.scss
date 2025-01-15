@@ -1,13 +1,14 @@
-
+.left-block-container {
+    margin:10px;
+}
 
 .date-for-left-block {
-    margin:10px;
     font-size: 30px;
 }
 .btn-left-block {
     display: flex;
     gap:10px;
-    margin:10px;   
+
     .btns{
         background-color: white;
         color: rgb(44, 44, 44);
@@ -23,7 +24,8 @@
 
 
 nav {
-    margin: 50px 0;
+    margin: 50px 0 30px 0;
+    border-bottom: 1px solid grey;
 }
 
 ul {
