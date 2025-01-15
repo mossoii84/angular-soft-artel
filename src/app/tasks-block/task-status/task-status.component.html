@@ -1,0 +1,23 @@
+<div class="task-status-container">
+
+
+    <div class="status-color">
+        @for (status of statusArray; track status) {
+            <div class="status-icon" [ngClass]="{
+                'class0': status === enumStatus.NoStatus,
+                'class1': status === enumStatus.Frontend,
+                'class2': status === enumStatus.Backend,
+                'class3': status === enumStatus.Testing,
+                'class4': status === enumStatus.Design,
+                'class5': status === enumStatus.Analytics,
+              }">
+            </div>
+            } 
+            @empty {
+            <div class="status-icon">0</div>
+            }
+    </div>
+
+
+
+</div>

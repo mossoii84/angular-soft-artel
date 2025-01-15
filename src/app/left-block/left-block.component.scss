@@ -1,0 +1,33 @@
+
+
+.date-for-left-block {
+    margin:10px;
+    font-size: 30px;
+}
+.btn-left-block {
+    display: flex;
+    gap:10px;
+    margin:10px;   
+    .btns{
+        background-color: white;
+        color: rgb(44, 44, 44);
+        padding: 5px 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 2px;
+    }
+    .btns:hover {
+        background-color: #0056b3;
+    }
+}
+
+
+
+nav {
+    margin: 50px 0;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

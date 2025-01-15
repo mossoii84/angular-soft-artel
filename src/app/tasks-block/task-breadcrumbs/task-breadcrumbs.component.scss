@@ -1,0 +1,25 @@
+.task-dreadcrumbs-container {
+    background-color: rgb(148, 135, 222);
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    
+}
+
+.for-dreadcrumbs-icons {
+    display: flex;
+    align-items: center;
+    padding:0 10px;
+    border: 1px solid red;
+    img {
+        width: 24px;
+    }
+}
+.for-dreadcrumbs-discript {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    img {
+        width: 24px;
+    }
+}
