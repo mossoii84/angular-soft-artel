@@ -24,12 +24,17 @@
 
 
 nav {
-    margin: 50px 0 30px 0;
-    border-bottom: 1px solid grey;
-}
+    margin: 50px 0 25px 0;
+    line-height: 2em;
 
-ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+    ul {
+        display: flex;
+        gap:40px;
+        border-bottom: 1px solid rgb(172, 172, 172);
+    }
+
+    .active-link {
+        border-bottom: 2px solid blue;
+        color: blue;
+    }
 }

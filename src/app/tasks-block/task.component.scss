@@ -1,10 +1,22 @@
+p-accordion-panel {
+        margin-top: 10px;
+}
+.p-accordionpanel{
+        border-style: none;
+}
+p-accordion-content {
+     padding-top: 10px;
+     background-color: rgb(247, 246, 246)!important;
+}
 ::ng-deep .p-accordioncontent-content {
         background-color: rgb(247, 246, 246)!important;
         display: grid;
         row-gap: 10px;
       }
-      
-  
+p-accordion-header {
+       background-color: rgb(247, 246, 246)!important;  
+}
+
 .task-block {
         background-color: white;     
         border-radius: 8px;       
