@@ -4,6 +4,5 @@ import { LeftBlockComponent } from './left-block/left-block.component';
 
 export const routes: Routes = [
 
-  // {path:"", component:LeftBlockComponent}
-
+  {path:"", component:LeftBlockComponent}
 ];
