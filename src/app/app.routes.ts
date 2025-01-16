@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { LeftBlockComponent } from './left-block/left-block.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 
 export const routes: Routes = [
 
-  {path:"", component:LeftBlockComponent}
+  {path:"", component:HomePageComponent}
 ];

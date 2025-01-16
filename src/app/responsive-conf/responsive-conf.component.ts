@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
@@ -24,7 +24,6 @@ export class ResponsiveConfComponent {
   activetesRoute= inject(ActivatedRoute)
   router = inject(Router)
 
-  //смотреть размеры можно выбрать и удобнее-https://material.angular.io/cdk/layout/overview
   protected currentRange?: 'Handset' | 'Tablet' | 'Web';
   private subscription!: Subscription;
 

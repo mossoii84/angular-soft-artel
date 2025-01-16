@@ -1,0 +1,25 @@
+.mainWeb {
+    display: grid;
+    grid-template-areas: 
+      "section-left section-right";
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+.mainMobile {
+    display: grid;
+    grid-template-areas: 
+      "section-right"
+      "section-left ";
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+
+.section-left {
+    grid-area: section-left ;
+    background-color: aqua;
+}
+.section-right {
+    grid-area: section-right;
+    background-color: greenyellow;
+}

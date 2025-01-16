@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ResponsiveConfComponent } from './responsive-conf/responsive-conf.component';
-import { LeftBlockComponent } from './left-block/left-block.component';
-import { RightBlockComponent } from './right-block/right-block.component';
+import { HomePageComponent } from "./home-page/home-page.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ResponsiveConfComponent, LeftBlockComponent, RightBlockComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
