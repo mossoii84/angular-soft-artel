@@ -15,9 +15,7 @@ export class LeftBlockComponent {
 
 
   cities: any | undefined;
-
   selectedCity: string | undefined;
-
   ngOnInit() {
       this.cities = [
           { name: 'New York', code: 'NY' },

@@ -1,0 +1,43 @@
+.right-block-container {
+    padding: 10px 10px;
+}
+
+
+.right-block-menu {
+    display: flex;
+    background-color: aqua;
+    align-items: center;
+    justify-content: end;
+}
+
+
+
+
+
+
+.right-block-article {
+    margin-top: 140px;
+}
+.inwork-container{
+    background-color: blueviolet;
+    border-radius: 4px;
+    padding:10px 10px;
+}
+.right-block-article-title {
+    color: blue;
+}
+article {
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.task-block {
+    background-color: white;     
+    border-radius: 8px;       
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 0 10px;
+}
+
+.pause-container {
+    margin: 10px 0;
+}
