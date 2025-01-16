@@ -1,0 +1,16 @@
+nav {
+    margin: 50px 0 25px 0;
+    line-height: 2em;
+
+    ul {
+        display: flex;
+        gap:40px;
+        border-bottom: 1px solid rgb(172, 172, 172);
+    }
+
+    .active-link {
+        border-bottom: 3px solid blue;
+        color: blue;
+        padding: 7px 0;
+    }
+}

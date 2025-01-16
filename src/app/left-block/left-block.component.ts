@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { TaskComponent } from '../tasks-block/task.component';
 import { DateTodayComponent } from '../date-times/date-today/date-today.component';
 import { SelectModule } from 'primeng/select';
 import { FormsModule } from '@angular/forms';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { LeftBlockMenuComponent } from "../left-block-menu/left-block-menu.component";
 
 @Component({
   selector: 'app-left-block',
-  imports: [TaskComponent, FormsModule, DateTodayComponent, SelectModule, RouterLink, RouterLinkActive],
+  standalone:true,
+  imports: [FormsModule, DateTodayComponent, SelectModule, LeftBlockMenuComponent],
   templateUrl: './left-block.component.html',
   styleUrl: './left-block.component.scss'
 })
