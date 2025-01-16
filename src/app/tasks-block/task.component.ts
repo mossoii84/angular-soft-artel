@@ -7,6 +7,7 @@ import { AccordionModule } from 'primeng/accordion';
 
 @Component({
   selector: 'app-task',
+  standalone: true,
   imports: [TaskAuthorComponent, TaskBreadcrumbsComponent,TaskStatusComponent, TaskTitleComponent, AccordionModule],
   templateUrl: './task.component.html',
   styleUrl: './task.component.scss'
