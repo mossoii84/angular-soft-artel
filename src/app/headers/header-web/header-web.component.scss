@@ -8,72 +8,9 @@ ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 
 }
 .p-select {
     border:2px solid blue
 }
-
-
-
-  /*Select варинат круг*/
-  .spisokListContainerR{
-    display:grid;
-    position: relative;
-
-  }  
-  .spisokR {
-    padding:5px 10px;
-    display:grid;
-    grid-template-columns: 93%  7%;
-    align-content: center;
-    align-self: center;
-    border-radius:4px;
-    border:2px solid rgba(120, 7, 225, 0.68);
-  }
-  .spisokR.openR {
-     border:1px solid #9196A4;
-     border-radius:24px 24px 1px 1px;
-   }
-  .spisokR.openR svg{
-    transform: rotate(180deg);
-  }
-  .openListR {
-    display:none;
-  }
-  .openListR.openR {
-    display:grid;
-    opacity: 1;
-    max-width: 360px;
-    font-size: 1rem;
-    height: 180px;
-    overflow-y: scroll;
-    line-height: 1.5em;
-    border:1px solid #9196A4;
-  }
-  /*.openListR li:first-child{*/
-  /*  border-top:1px solid #9196A4;*/
-  /*}*/
-  .openListR li{
-    border-bottom:1px solid #9196A4;
-    padding:13px 20px;
-    border-radius:24px 0px;
-    font-size:18px;
-  }
-  .spisokListContainerR div::-webkit-scrollbar {
-    width: 12px;
-  }
-  .spisokListContainerR div::-webkit-scrollbar-track {
-    outline:1px solid #9196A4;
-  }
-  .spisokListContainerR div::-webkit-scrollbar-thumb {
-    background-color: #50BDA7FF;
-    border-radius: 8px;
-    border: 4px solid #fff;
-  }
-  .openListR li:hover{
-    background-color:#00DAB3
-  }
-  /* -------------------------------- */
-
-

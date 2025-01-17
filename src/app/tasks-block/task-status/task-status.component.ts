@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { TaskStatus } from '../../enums/task-status.enum';
+import { TaskStatus } from '../../files-configuration/enums/task-status.enum';
 
 @Component({
   selector: 'app-task-status',

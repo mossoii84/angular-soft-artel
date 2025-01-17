@@ -5,10 +5,45 @@
 
 .right-block-menu {
     display: flex;
-    background-color: aqua;
     align-items: center;
     justify-content: end;
 }
+
+
+.right-block-menu-discription {
+    max-width: 50%;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: white;     
+    border-radius: 4px;  
+    padding: 2px 10px;     
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.right-block-menu-message {
+    background-color: white;     
+    border-radius: 4px;  
+    padding: 2px 5px;     
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0 5px;
+}
+.right-block-menu-message {
+    position: relative;
+
+    .message-chiffre{
+        position: absolute;
+        top:-6px;
+        left:10px;
+        background-color: red;
+        border-radius: 14px;
+        padding: 1px 5px;
+        font-size: 11px;
+        color: white;
+    }
+}
+
+
 
 
 
@@ -17,27 +52,29 @@
 
 .right-block-article {
     margin-top: 140px;
-}
-.inwork-container{
-    background-color: blueviolet;
-    border-radius: 4px;
-    padding:10px 10px;
-}
-.right-block-article-title {
-    color: blue;
-}
-article {
-    border-radius: 4px;
-    margin-top: 10px;
-}
 
-.task-block {
-    background-color: white;     
-    border-radius: 8px;       
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 0 10px;
-}
+    .inwork-container{
+        background-color: blueviolet;
+        border-radius: 4px;
+        padding:10px 10px;
+    }
+    .right-block-article-title {
+        color: blue;
+    }
+    article {
+        border-radius: 4px;
+        margin-top: 10px;
+    }
 
-.pause-container {
-    margin: 10px 0;
+    .task-block {
+        background-color: white;     
+        border-radius: 8px;       
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 0 10px;
+    }
+
+    .pause-container {
+        margin: 10px 0;
+    }
+
 }

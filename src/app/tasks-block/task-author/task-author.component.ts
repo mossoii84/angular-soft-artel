@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AvatarComponent } from '../../avatar/avatar.component';
+import { AvatarComponent } from '../../files-configuration/avatar/avatar.component';
 
 @Component({
   selector: 'app-task-author',

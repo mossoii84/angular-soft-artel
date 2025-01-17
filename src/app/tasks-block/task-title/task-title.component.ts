@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AvatarComponent } from '../../avatar/avatar.component';
-import { TaskType } from '../../enums/task-type.enum';
+import { TaskType } from '../../files-configuration/enums/task-type.enum';
 import { CommonModule } from '@angular/common';
-import { Iconslist } from '../../icons/icons-list';
+import { Iconslist } from '../../files-configuration/icons/icons-list';
 
 @Component({
   selector: 'app-task-title',

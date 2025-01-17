@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Conf } from "../enums/conf.enum";
+import { Conf } from "../files-configuration/enums/conf.enum";
 import { BehaviorSubject, Observable } from "rxjs";
 
 @Injectable({

@@ -1,0 +1,10 @@
+<div class="dropdown">
+  <button [style.width]="btnWidth" (click)="toggleDropdown()">{{ btnTitle }}</button>
+
+  <ul *ngIf="isDropdownOpen" class="dropdown-list" [style.width]="btnWidth">
+    <li>{{listTitle}}</li>
+    <li *ngFor="let item of items">
+        <a href="#">{{ item }}</a>
+      </li>
+  </ul>
+</div>

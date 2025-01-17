@@ -1,0 +1,39 @@
+/* dropdown.component.css */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    white-space: nowrap; /* Запрещаем перенос текста */
+  }
+
+  button {
+    padding: 8px 10px;
+    background-color: #fff;
+    color: blue;
+    border: 2px solid blue;
+    cursor: pointer;
+    border-radius: 4px;
+    // width: 100px;
+  }
+  
+  
+  .dropdown-list {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    // width: 100px;
+    border-radius: 4px;
+    text-align: left;
+  }
+  
+  .dropdown-list li {
+    padding: 10px;
+  }
+  
+  .dropdown-list li:hover {
+    background-color: #f1f1f1;
+  }

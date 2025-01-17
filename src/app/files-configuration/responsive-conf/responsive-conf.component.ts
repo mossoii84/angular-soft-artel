@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
-import { HeaderWebComponent } from "../headers/header-web/header-web.component";
-import { HeaderMobileComponent } from "../headers/header-mobile/header-mobile.component";
-import { ConfService } from '../services/conf-service.service';
-import { Conf } from '../enums/conf.enum';
+
 import { ActivatedRoute, Router } from '@angular/router';
+import { HeaderMobileComponent } from '../../headers/header-mobile/header-mobile.component';
+import { HeaderWebComponent } from '../../headers/header-web/header-web.component';
+import { ConfService } from '../../services/conf-service.service';
+import { Conf } from '../enums/conf.enum';
 
 
 
