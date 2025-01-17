@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Iconslist } from '../../icons/icons-list';
 
 @Component({
   selector: 'app-time-now',
@@ -9,8 +10,9 @@ import { Component } from '@angular/core';
 })
 export class TimeNowComponent {
 
+  iconsList = Iconslist;
+  
   times: any;
-
   constructor() {}
 
   ngOnInit(): void {

@@ -1,22 +1,26 @@
 .task-dreadcrumbs-container {
     display: flex;
-    align-items: center;
     padding: 6px 0 0 0;
-}
-.simpl { 
-    margin-left: 10px;
-}
-.for-dreadcrumbs-icons {
-    display: flex;
-    align-items: center;
-}
-.for-dreadcrumbs-discript {
-    display: flex;
-    align-items: center;
-}
-img {
-    min-width: 24px;
-}
-span {
-    font-size: 20px;
+
+    .simpl { 
+        margin-left: 10px;
+        font-size: clamp(14px, 2vw, 16px);
+    }
+    .for-dreadcrumbs-icons {
+        display: flex;
+        align-items: center;
+    }
+    .for-dreadcrumbs-discript {
+        display: flex;
+        align-items: center;
+    }
+    img {
+        min-width: 24px;
+    }
+    .flash {
+        font-size: 20px;
+    }
+    .text-discript {
+        font-size: clamp(10px, 2vw, 16px);
+    }
 }

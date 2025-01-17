@@ -15,17 +15,9 @@ export const routes: Routes = [
       {
         path: 'page-empty',
         loadComponent: () =>
-          import('../app/left-block/left-block.component').then((c) => c.LeftBlockComponent),
+          import('../app/headers/header-mobile/header-mobile.component').then((c) => c.HeaderMobileComponent),
       },
     ],
   },
-
-
-
-  // {
-  //   path: 'home',
-  //   loadChildren: () => import('./left-block-menu/left-block-menu.routes').then((r) => r.left_block_menu),
-  // },
-
 
 ];

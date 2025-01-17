@@ -5,6 +5,7 @@ export interface Icons  {
   clock:string,
   ios:string,
   feature:string,
+  icondown:string,
 };
 export const Iconslist: Icons = {
     dev: '/assets/icons/zadachi/dev.svg',
@@ -12,4 +13,6 @@ export const Iconslist: Icons = {
     clock:'/assets/icons/zadachi/clock_12.svg',
     ios:'/assets/icons/ios/ios.svg',
     feature:'/assets/icons/zadachi/Feature.svg',
+    icondown:'/assets/icons/raznoe/chevron.down.min.svg'
 };
+

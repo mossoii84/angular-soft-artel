@@ -1,6 +1,12 @@
 
-            <h2>Мои: 7</h2>
 
+<div class="task-container" >
+    <div (click)="openClose()" >
+        <img [src]="iconsList.icondown" alt="">
+        <div>Мои: 7 - тут стиль добавить !!!</div>
+    </div>
+
+   <div *ngIf="isOpen">
                 <article class="task-block">
                     <app-task-breadcrumbs></app-task-breadcrumbs>
                     <app-task-title></app-task-title>
@@ -33,17 +39,21 @@
                     <app-task-status></app-task-status>
                     <app-task-author></app-task-author>
                 </article>
- 
-
+    </div>   
+</div>
      
-            <h2>Не назначенные: 9</h2>
-     
-                <article class="task-block">
-                    <app-task-breadcrumbs></app-task-breadcrumbs>
-                    <app-task-title></app-task-title>
-                    <app-task-status></app-task-status>
-                    <app-task-author></app-task-author>
-                </article>
-
-
+<div class="task-container" >
+    <div (click)="openClose2()" >
+            <img [src]="iconsList.icondown" alt="">
+            <div>Не назначенные: 9 !!!</div>
+        </div>
+    <div *ngIf="isOpen2">    
+        <article class="task-block">
+            <app-task-breadcrumbs></app-task-breadcrumbs>
+            <app-task-title></app-task-title>
+            <app-task-status></app-task-status>
+            <app-task-author></app-task-author>
+        </article>
+    </div>
+</div>
     

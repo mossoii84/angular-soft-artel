@@ -3,8 +3,6 @@
     grid-template-areas: 
       "section-left section-right";
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
-    background-color: var(--Color-bg-grayDark, #F1F2F4);
 }
 .mainMobile {
     display: grid;
@@ -12,8 +10,6 @@
       "section-right"
       "section-left ";
     grid-template-columns: 1fr;
-    height: 100vh;
-    background-color: var(--Color-bg-grayDark, #F1F2F4);
 }
 
 

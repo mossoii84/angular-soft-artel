@@ -1,16 +1,20 @@
 nav {
     margin: 8px 0 16px 0;
-    line-height: 2em;
-
+   
     ul {
         display: flex;
-        gap:40px;
         border-bottom: 1px solid rgb(172, 172, 172);
+        justify-content: space-between;
     }
-
+    li { 
+        margin: 0 4px;
+        font-size: clamp(10px, 2vw, 16px);
+        padding-bottom: 10px;
+    }
     .active-link {
-        border-bottom: 2px solid var(--Color-active_blue, #16A4E3);;
-        color: var(--Color-active_blue, #16A4E3);;
-        padding: 7px 0;
+        border-bottom: 2px solid var(--Color-active_blue, #16A4E3);
+        color: var(--Color-active_blue, #16A4E3);
+        padding-bottom: 11px;
+
     }
 }

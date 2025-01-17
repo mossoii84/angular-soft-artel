@@ -37,6 +37,8 @@
     font-size:14px;
     font-weight: 500;
     line-height: 21px;
+    height: 100vh;
+    background-color: var(--Color-bg-grayDark, #F1F2F4);
   }
   a {
     color: inherit;  /* Убирает синий цвет */
