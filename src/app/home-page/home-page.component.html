@@ -2,6 +2,9 @@
 <main [ngClass]="versionCurrentRange  === conf.MOBILE ? 'mainMobile' : 'mainWeb' ">
       
       <section class="section-left">
+        @if(versionCurrentRange  != conf.MOBILE) {
+          <app-header-web></app-header-web>
+        }
         <app-left-block></app-left-block>
       </section>
 

@@ -1,13 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-//создаем переменную стиля
-$xxx: 0px 4px 10px rgba(0, 0, 0, 0.1);
-//так его вызываем в css компонента
-.card {
-  box-shadow: $xxx;
-}
-
 @font-face {
   font-family: 'Roboto'; 
   src: url('/assets/font/Roboto-VariableFont_wdth,wght') format('truetype'); 
@@ -63,7 +55,3 @@ $xxx: 0px 4px 10px rgba(0, 0, 0, 0.1);
   .rond-image {
     border-radius: 24px;
   }
-
-
-
-  //отступ задаи от общего окна 12px и блока с текстом внутри задачи тоже 12px и с права и сверху

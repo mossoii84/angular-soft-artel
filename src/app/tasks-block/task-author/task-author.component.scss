@@ -1,22 +1,24 @@
 .task-author-container {
-    display: flex;
-    align-items: center;
-    padding: 5px 0;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  justify-content: space-between;
+  width: 100%;
 }
 .for-parenthese {
-    display: flex;
-    padding:0 10px;
+  display: flex;
+  padding-right: 15px;
 }
 .for-discription {
-    display: flex;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
 }
-.name{
-    padding: 0 5px;
+.name {
+  padding: 0 5px;
+  color:var(--Color-text-text-secondary, #7E7E7E);
+
 }
-.for-times{
-    white-space: nowrap; /* Запрещаем перенос текста */
+.for-times {
+  white-space: nowrap; /* Запрещаем перенос текста */
 }
