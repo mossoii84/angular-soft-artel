@@ -7,14 +7,13 @@ $xxx: 0px 4px 10px rgba(0, 0, 0, 0.1);
 .card {
   box-shadow: $xxx;
 }
-// @font-face {
-//   font-family: 'SF Pro Display';
-//   src: url('/assets/fonts/SFProDisplay-Bold/SFPRODISPLAYREGULAR.OTF') format('opentype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
 
-
+@font-face {
+  font-family: 'Roboto'; 
+  src: url('/assets/font/Roboto-VariableFont_wdth,wght') format('truetype'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
   
   
   * {
@@ -23,17 +22,29 @@ $xxx: 0px 4px 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
   }
   :root {
-    // background-color: var(--tg-theme-bg-color); //переменные цвета от телеграма
-    // color:var(--tg-theme-text-color);
-    // background: var(--Background, #F3F7FB); //белый фон
+    --Color-bg-grayDark: #F1F2F4; //главный фон
+
+    --Color-red: #CE0000;
+    --Color-active_blue: #16A4E3;
+
+    
+    --Color-text-text-text: #5E5E5E; 
+    --Color-text-text-secondary: #7E7E7E;
+
+    --color-bg-border-divider: #0000000A; //обводка
+    --Color-bg-selected_light: #FFFFFF;
+    
+
+
+    --font-size-small: 13px;
 }
 
   html,
   body {
-    // font-family: 'SF Pro Display', sans-serif; /* Указываем SF Pro Display, и запасной sans-serif */
-    // font-size: 16px;
-    font-size:1rem;
+    font-family: 'Roboto', sans-serif; 
+    font-size:14px;
     font-weight: 500;
+    line-height: 21px;
   }
   a {
     color: inherit;  /* Убирает синий цвет */
@@ -55,4 +66,4 @@ $xxx: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
 
 
-  
+  //отступ задаи от общего окна 12px и блока с текстом внутри задачи тоже 12px и с права и сверху

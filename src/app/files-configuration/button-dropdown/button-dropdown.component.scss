@@ -7,15 +7,21 @@
   }
 
   button {
-    padding: 8px 10px;
+    padding: 8px 4px;
     background-color: #fff;
-    border: 2px solid;
+    border: 1px solid;
     border-color: white;
     cursor: pointer;
     border-radius: 4px;
   }
-  
-  
+  .btn-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap:5px;
+  }
+
+
   .dropdown-list {
     position: absolute;
     background-color: white;

@@ -9,8 +9,8 @@ nav {
     }
 
     .active-link {
-        border-bottom: 3px solid blue;
-        color: blue;
+        border-bottom: 2px solid var(--Color-active_blue, #16A4E3);;
+        color: var(--Color-active_blue, #16A4E3);;
         padding: 7px 0;
     }
 }

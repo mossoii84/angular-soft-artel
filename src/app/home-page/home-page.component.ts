@@ -6,10 +6,11 @@ import { Conf } from '../files-configuration/enums/conf.enum';
 import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { ResponsiveConfComponent } from '../files-configuration/responsive-conf/responsive-conf.component';
+import { RightBlockMenuComponent } from "../right-block-menu/right-block-menu.component";
 
 @Component({
   selector: 'app-home-page',
-  imports: [CommonModule, ResponsiveConfComponent, LeftBlockComponent, RightBlockComponent],
+  imports: [CommonModule, LeftBlockComponent, RightBlockComponent, ResponsiveConfComponent, RightBlockMenuComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
@@ -20,11 +21,15 @@ export class HomePageComponent implements OnInit{
 
     conf = Conf;
     versionCurrentRange: string | undefined;
+    constructor(){
+      this.subscription = this.confService.getRange().subscribe(
+        data => { this.versionCurrentRange=data
+       console.log(this.versionCurrentRange)
+      });
+    }
 
     ngOnInit(): void {
-      this.subscription = this.confService.getRange().subscribe(
-        data => { this.versionCurrentRange=data});
-       console.log(this.versionCurrentRange)
+      
     }
 
 

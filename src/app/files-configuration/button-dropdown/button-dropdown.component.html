@@ -1,6 +1,24 @@
 <div class="dropdown">
   <button [style.width]="btnWidth" [style.color]="textColor" 
-          [style.border-color]="borderColor"  (click)="toggleDropdown()">{{ btnTitle }}</button>
+          [style.border-color]="borderColor"  (click)="toggleDropdown()">
+
+          @if(btnForHeader=="1"){
+            <div class="btn-icons">
+              <img src="/assets/icons/raznoe/plus.svg"  alt=""/>
+              {{ btnTitle }}
+              <img src="/assets/icons/raznoe/chevron.down.min.svg"  alt=""/>
+            </div>
+         }
+         @else {
+          <div class="btn-icons">
+            {{ btnTitle }}
+            <img src="/assets/icons/raznoe/chevron.down.min.svg"  alt=""/>
+          </div>
+         }
+
+
+
+        </button>
 
   <ul *ngIf="isDropdownOpen" class="dropdown-list" [style.width]="btnWidth">
     <li>{{listTitle}}</li>

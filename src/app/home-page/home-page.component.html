@@ -1,13 +1,18 @@
+<app-responsive-conf></app-responsive-conf>
+<main [ngClass]="versionCurrentRange  === conf.MOBILE ? 'mainMobile' : 'mainWeb' ">
+      
+      <section class="section-left">
+        <app-left-block></app-left-block>
+      </section>
 
-<main [ngClass]="versionCurrentRange  == conf.MOBILE ? 'mainMobile' : 'mainWeb'  ">
-  <section class="section-left">
-    <app-responsive-conf></app-responsive-conf>
-    <app-left-block></app-left-block>
-  </section>
 
+      <section class="section-right">
+        @if(versionCurrentRange  != conf.MOBILE) {
+          <app-right-block-menu></app-right-block-menu>
+        }
 
-  <section class="section-right">
-    <app-right-block></app-right-block>
-  </section>
+        <app-right-block></app-right-block>
+      </section>
+
 
 </main>

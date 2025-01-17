@@ -16,23 +16,12 @@ import { ButtonDropdownComponent } from "../../files-configuration/button-dropdo
 export class HeaderWebComponent  implements OnInit {
 
 
-  cities: any | undefined;
-  selectedCity: string | undefined;
+
   ngOnInit() {
-      this.cities = [
-          { name: 'New York', code: 'NY' },
-          { name: 'Rome', code: 'RM' },
-      ];
-      console.log("header")
+
   }
 
-    
-  // всплывюещее меню Select круг
-  activeItemR: boolean = false;
-  public openListItemsR(): void {
-    this.activeItemR = !this.activeItemR;
-  }
-  
+
 
     
     

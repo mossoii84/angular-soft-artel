@@ -14,7 +14,7 @@ import { Conf } from '../enums/conf.enum';
 @Component({
   selector: 'app-responsive-conf',
   standalone: true,
-  imports: [CommonModule, HeaderWebComponent, HeaderMobileComponent],
+  imports: [CommonModule],
   templateUrl: './responsive-conf.component.html',
   styleUrl: './responsive-conf.component.scss'
 })

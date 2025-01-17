@@ -11,7 +11,7 @@ export class AvatarComponent implements OnInit{
   @Input() avatarHeight: string ='';
 
   ngOnInit(): void {
-    console.log("==",this.avatarWidth);
+
   }
 
 

@@ -14,7 +14,7 @@ export class ButtonDropdownComponent {
   @Input() btnWidth:string="100px";
   @Input() textColor:string="black";
   @Input() borderColor:string="white";
-
+  @Input() btnForHeader:string="0";
 
   isDropdownOpen = false;
 

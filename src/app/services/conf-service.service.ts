@@ -9,7 +9,7 @@ import { BehaviorSubject, Observable } from "rxjs";
 export class ConfService {
 
 
-    public currentRangeSubject = new BehaviorSubject<Conf>(Conf.DEFAULT);  // Инициализируем значением по умолчанию
+    public currentRangeSubject = new BehaviorSubject<Conf>(Conf.DEFAULT);  
     currentRange$: Observable<Conf>  = this.currentRangeSubject.asObservable();
   
 

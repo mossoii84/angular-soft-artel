@@ -4,6 +4,7 @@
       "section-left section-right";
     grid-template-columns: 1fr 1fr;
     height: 100vh;
+    background-color: var(--Color-bg-grayDark, #F1F2F4);
 }
 .mainMobile {
     display: grid;
@@ -12,14 +13,15 @@
       "section-left ";
     grid-template-columns: 1fr;
     height: 100vh;
+    background-color: var(--Color-bg-grayDark, #F1F2F4);
 }
 
 
 .section-left {
     grid-area: section-left ;
-    background-color: aqua;
+    padding: 10px 10px;
 }
 .section-right {
     grid-area: section-right;
-    background-color: greenyellow;
+    padding: 10px 10px;
 }

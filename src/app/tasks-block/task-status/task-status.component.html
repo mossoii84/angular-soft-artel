@@ -1,8 +1,7 @@
 <div class="task-status-container">
 
-
     <div class="status-color">
-        @for (status of statusArray; track status) {
+        @for (status of statusArray; track statusArray.values) {
             <div class="status-icon" [ngClass]="{
                 'class0': status === enumStatus.NoStatus,
                 'class1': status === enumStatus.Frontend,
