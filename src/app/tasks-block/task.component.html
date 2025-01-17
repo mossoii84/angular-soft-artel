@@ -9,7 +9,8 @@
    <div *ngIf="isOpen">
                 <article class="task-block">
                     <app-task-breadcrumbs *ngIf="showBreadcrumbs" [ngClass]="showBreadcrumbs==true? 'readcrumbs' : '' "
-                    (mouseenter)="showBreadcrumbs = true" ></app-task-breadcrumbs>
+                    (mouseenter)="showBreadcrumbs = true"
+                    (mouseleave)="showBreadcrumbs = false" ></app-task-breadcrumbs>
                     <app-task-title
                         (mouseenter)="showBreadcrumbs = true" 
                         (mouseleave)="showBreadcrumbs = false">
