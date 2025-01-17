@@ -9,7 +9,7 @@ import { HeaderWebComponent } from "../headers/header-web/header-web.component";
 @Component({
   selector: 'app-left-block',
   standalone:true,
-  imports: [FormsModule, DateTodayComponent, SelectModule, LeftBlockMenuComponent, ButtonDropdownComponent],
+  imports: [FormsModule, DateTodayComponent, SelectModule, ButtonDropdownComponent],
   templateUrl: './left-block.component.html',
   styleUrl: './left-block.component.scss'
 })

@@ -1,6 +1,7 @@
 
 .task-container {
-  border: 1px solid red;
+  padding: 12px;
+  background-color: var(--Color-bg-blocks, #F9FAFC);
 }
 .task-block {
         background-color: white;     
@@ -10,14 +11,16 @@
         margin-top: 10px;
 }
 
-
+.title-task-block {
+  display: flex;
+}
 
 
 
 .breadcrumbs {
   opacity: 0;
   transform: translateY(-20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 1s ease, transform 1s ease;
   transition-delay: 1s;
 }
 

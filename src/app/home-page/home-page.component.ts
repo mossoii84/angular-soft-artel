@@ -8,10 +8,11 @@ import { Subscription } from 'rxjs';
 import { ResponsiveConfComponent } from '../files-configuration/responsive-conf/responsive-conf.component';
 import { RightBlockMenuComponent } from "../right-block-menu/right-block-menu.component";
 import { HeaderWebComponent } from "../headers/header-web/header-web.component";
+import { LeftBlockMenuComponent } from "../left-block-menu/left-block-menu.component";
 
 @Component({
   selector: 'app-home-page',
-  imports: [CommonModule, LeftBlockComponent, RightBlockComponent, ResponsiveConfComponent, RightBlockMenuComponent, HeaderWebComponent],
+  imports: [CommonModule, LeftBlockComponent, RightBlockComponent, ResponsiveConfComponent, RightBlockMenuComponent, HeaderWebComponent, LeftBlockMenuComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })

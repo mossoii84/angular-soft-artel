@@ -7,19 +7,28 @@
       <app-button-dropdown
         btnTitle="Все продукты"
         listTitle="Все продукты"
-        [items]="['Название 1', 'Название 2', 'Название 3']"
+        [items]="[
+        { title: 'Название 1', image: '/assets/icons/zadachi/logo16.svg' },
+        { title: 'Название 2', image: '/assets/icons/zadachi/logo16.svg' },
+        { title: 'Название 3', image: '/assets/icons/zadachi/logo16.svg' },
+        ]"
         btnWidth="130px"
       />
 
       <app-button-dropdown
         btnTitle="Все задачи"
         listTitle="Все задачи"
-        [items]="['Общие', 'Разработка', 'Тестирование', 'Ошибки']"
+        [items]="[
+          { title: 'Общие', image: '/assets/icons/raznoe/category.svg' },
+          { title: 'Разработка', image: '/assets/icons/menutop/calendar.svg' },
+          { title: 'Тестирование', image: '/assets/icons/raznoe/category.svg'},
+          { title: 'Ошибки', image: '/assets/icons/raznoe/test.svg' }
+        ]"
         btnWidth="130px"
       />
   </div>
 
-  <app-left-block-menu></app-left-block-menu>
+
 
 
 </div>

@@ -29,15 +29,19 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     padding: 0;
     margin-top: 5px;
-    list-style: none;
     border-radius: 4px;
     text-align: left;
   }
   
   .dropdown-list li {
     padding: 10px;
+    display: flex;
+    align-items: center;
   }
   
   .dropdown-list li:hover {
     background-color: #f1f1f1;
+  }
+  .listTitle {
+    margin-left: 16px;
   }

@@ -21,9 +21,10 @@
         </button>
 
   <ul *ngIf="isDropdownOpen" class="dropdown-list" [style.width]="btnWidth">
-    <li>{{listTitle}}</li>
-    <li *ngFor="let item of items">
-        <a href="#">{{ item }}</a>
+    <li class="listTitle">{{listTitle}}</li>
+    <li *ngFor="let item of items" class="list-dist">
+        <img [src]=item.image alt="" />
+        <a href="#">{{ item.title }}</a> 
       </li>
   </ul>
 </div>

@@ -21,8 +21,9 @@ export class TaskComponent {
   isOpen2:boolean=true;
 
   showBreadcrumbs:boolean | undefined;
-
-
+  showBreadcrumbs2:boolean | undefined;
+  showBreadcrumbs3:boolean | undefined;
+  showBreadcrumbs4:boolean | undefined;
 
   openClose(){
     this.isOpen = !this.isOpen;
