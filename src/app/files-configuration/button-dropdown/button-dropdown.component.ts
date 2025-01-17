@@ -12,7 +12,9 @@ export class ButtonDropdownComponent {
   @Input() listTitle: string = "";
   @Input() items: string[] = []; 
   @Input() btnWidth:string="100px";
-  
+  @Input() textColor:string="black";
+  @Input() borderColor:string="white";
+
 
   isDropdownOpen = false;
 

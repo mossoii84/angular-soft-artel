@@ -9,11 +9,10 @@
   button {
     padding: 8px 10px;
     background-color: #fff;
-    color: blue;
-    border: 2px solid blue;
+    border: 2px solid;
+    border-color: white;
     cursor: pointer;
     border-radius: 4px;
-    // width: 100px;
   }
   
   
@@ -25,7 +24,6 @@
     padding: 0;
     margin-top: 5px;
     list-style: none;
-    // width: 100px;
     border-radius: 4px;
     text-align: left;
   }

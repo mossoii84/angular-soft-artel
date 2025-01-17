@@ -1,5 +1,6 @@
 <div class="dropdown">
-  <button [style.width]="btnWidth" (click)="toggleDropdown()">{{ btnTitle }}</button>
+  <button [style.width]="btnWidth" [style.color]="textColor" 
+          [style.border-color]="borderColor"  (click)="toggleDropdown()">{{ btnTitle }}</button>
 
   <ul *ngIf="isDropdownOpen" class="dropdown-list" [style.width]="btnWidth">
     <li>{{listTitle}}</li>
