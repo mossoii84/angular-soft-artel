@@ -1,21 +1,22 @@
 .task-dreadcrumbs-container {
     display: flex;
     align-items: center;
-    margin: 6px 0;
+    padding: 6px 0 0 0;
 }
-
+.simpl { 
+    margin-left: 10px;
+}
 .for-dreadcrumbs-icons {
     display: flex;
     align-items: center;
-    padding-right: 10px;
-    img {
-        width: 24px;
-    }
 }
 .for-dreadcrumbs-discript {
     display: flex;
     align-items: center;
-    img {
-        width: 24px;
-    }
+}
+img {
+    min-width: 24px;
+}
+span {
+    font-size: 20px;
 }

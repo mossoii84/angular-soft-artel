@@ -1,7 +1,7 @@
 .task-author-container {
   display: flex;
   align-items: center;
-  margin: 6px 0;
+  padding: 6px 0;
   justify-content: space-between;
   width: 100%;
 }
@@ -20,5 +20,7 @@
 
 }
 .for-times {
-  white-space: nowrap; /* Запрещаем перенос текста */
+  display: flex;
+  align-items: center;
+  white-space: nowrap; 
 }
