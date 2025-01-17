@@ -1,22 +1,57 @@
-
-
 <header>
-        <ul>
-            <li><a routerLink="/user" routerLinkActive="active-link">Главная</a></li>
-            <li><a routerLink="/user" routerLinkActive="active-link">Проекты</a></li>
-            <li><a routerLink="/user" routerLinkActive="active-link">Команда</a></li>
-            <li><a routerLink="/user" routerLinkActive="active-link">Канбан</a></li>
-            <li><a routerLink="/user" routerLinkActive="active-link">Итерации</a></li>        
-  
-            <app-button-dropdown btnForHeader="1" btnTitle="Создать" listTitle="Меню" btnWidth="100px" textColor="#16A4E3" borderColor="#16A4E3"
-                                 [items]="['Пункт A', 'Пункт B', 'Пункт C']"/>
-        </ul>
+  <ul>
+    <li>
+      <a routerLink="/user" routerLinkActive="active-link">
+        <div class="bnt-icons-menu">
+          <img src="/assets/icons/menutop/icon_logo_kosmo.svg" alt="" />
+          <div>Главная</div>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a routerLink="/user" routerLinkActive="active-link">
+        <div class="bnt-icons-menu">
+          <img src="/assets/icons/menutop/projects.svg" alt="" />
+          <div>Проекты</div>
+          <img src="/assets/icons/raznoe/chevron.down.min.svg"  alt=""/>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a routerLink="/user" routerLinkActive="active-link">
+        <div class="bnt-icons-menu">
+          <img src="/assets/icons/menutop/team.svg" alt="" />
+          <div>Команда</div>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a routerLink="/user" routerLinkActive="active-link">
+        <div class="bnt-icons-menu">
+          <img src="/assets/icons/menutop/kanban.svg" alt="" />
+          <div>Канбан</div>
+        </div></a>
+    </li>
+
+    <li>
+      <a routerLink="/user" routerLinkActive="active-link">
+        <div class="bnt-icons-menu">
+          <img src="/assets/icons/menutop/calendar.svg" alt="" />
+          <div>Итерации</div>
+        </div></a>
+    </li>
+
+    <app-button-dropdown
+      btnForHeader="1"
+      btnTitle="Создать"
+      listTitle="Меню"
+      btnWidth="100px"
+      textColor="#16A4E3"
+      borderColor="#16A4E3"
+      [items]="['Пункт A', 'Пункт B', 'Пункт C']"
+    />
+  </ul>
 </header>
-
-
-
-
-
-
-
-  
