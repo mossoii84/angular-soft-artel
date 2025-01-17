@@ -14,7 +14,7 @@ export class AppComponent {
 
 
 
-  export const tasks = [
+   tasks = [
     {
       taskName: 'Разработка главной страницы',
       author: 'Иван Иванов',
