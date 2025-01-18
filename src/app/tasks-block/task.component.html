@@ -8,32 +8,16 @@
     <div class="task-container" >
         <div *ngIf="isOpen">
 
-                <article class="task-block">
-                    <app-task-breadcrumbs *ngIf="showBreadcrumbs" [ngClass]="showBreadcrumbs==true? 'readcrumbs' : '' "
-                    (mouseenter)="showBreadcrumbs = true"
-                    (mouseleave)="showBreadcrumbs = false" ></app-task-breadcrumbs>
-                    <app-task-title
-                        (mouseenter)="showBreadcrumbs = true" 
-                        (mouseleave)="showBreadcrumbs = false">
+                <article class="task-block" *ngFor="let task of tasksList">
+                    <app-task-breadcrumbs></app-task-breadcrumbs>
+                    <app-task-title [taskName]=task.taskName taskId={{task.taskId}}/>
 
-                    </app-task-title>
-                    <app-task-status></app-task-status>
-                    <app-task-author></app-task-author>
+                    <app-task-status [statusList]=task.status></app-task-status>
+                    <app-task-author [author]=task.author></app-task-author>
                 </article>
 
-                <article class="task-block">
-                    <app-task-breadcrumbs *ngIf="showBreadcrumbs2" [ngClass]="showBreadcrumbs2==true? 'readcrumbs' : '' "
-                    (mouseenter)="showBreadcrumbs2 = true"
-                    (mouseleave)="showBreadcrumbs2 = false" ></app-task-breadcrumbs>
-                    <app-task-title
-                        (mouseenter)="showBreadcrumbs2 = true" 
-                        (mouseleave)="showBreadcrumbs2 = false">
-                    </app-task-title>
-                    <app-task-status></app-task-status>
-                    <app-task-author></app-task-author>
-                </article>
-
-                <article class="task-block">
+               
+                <!-- <article class="task-block">
                     <app-task-breadcrumbs *ngIf="showBreadcrumbs3" [ngClass]="showBreadcrumbs3==true? 'readcrumbs' : '' "
                     (mouseenter)="showBreadcrumbs3 = true"
                     (mouseleave)="showBreadcrumbs3 = false" ></app-task-breadcrumbs>
@@ -43,19 +27,8 @@
                     </app-task-title>
                     <app-task-status></app-task-status>
                     <app-task-author></app-task-author>
-                </article>
+                </article> -->
 
-                <article class="task-block">
-                    <app-task-breadcrumbs *ngIf="showBreadcrumbs4" [ngClass]="showBreadcrumbs4==true? 'readcrumbs' : '' "
-                    (mouseenter)="showBreadcrumbs4 = true"
-                    (mouseleave)="showBreadcrumbs4 = false" ></app-task-breadcrumbs>
-                    <app-task-title
-                        (mouseenter)="showBreadcrumbs4 = true" 
-                        (mouseleave)="showBreadcrumbs4 = false">
-                    </app-task-title>
-                    <app-task-status></app-task-status>
-                    <app-task-author></app-task-author>
-                </article>
       
         </div> 
     </div>
@@ -73,44 +46,14 @@
     <div class="task-container" >
         <div *ngIf="isOpen2">
             
-                <article class="task-block">
-                    <app-task-breadcrumbs *ngIf="showBreadcrumbs" [ngClass]="showBreadcrumbs==true? 'readcrumbs' : '' "
-                    (mouseenter)="showBreadcrumbs = true"
-                    (mouseleave)="showBreadcrumbs = false" ></app-task-breadcrumbs>
-                    <app-task-title
-                        (mouseenter)="showBreadcrumbs = true" 
-                        (mouseleave)="showBreadcrumbs = false">
+            <article class="task-block" *ngFor="let task of tasksList">
+                <app-task-breadcrumbs></app-task-breadcrumbs>
+                <app-task-title [taskName]=task.taskName taskId={{task.taskId}}/>
 
-                    </app-task-title>
-                    <app-task-status></app-task-status>
-                    <app-task-author></app-task-author>
-                </article>
-
-                <article class="task-block">
-                    <app-task-breadcrumbs></app-task-breadcrumbs>
-                    <app-task-title></app-task-title>
-                    <app-task-status></app-task-status>
-                    <app-task-author></app-task-author>
-                </article>
+                <app-task-status [statusList]=task.status></app-task-status>
+                <app-task-author [author]=task.author></app-task-author>
+            </article>
                 
-                <article class="task-block">
-                    <app-task-breadcrumbs></app-task-breadcrumbs>
-                    <app-task-title></app-task-title>
-                    <app-task-status></app-task-status>
-                    <app-task-author></app-task-author>
-                </article>
-                <article class="task-block">
-                    <app-task-breadcrumbs></app-task-breadcrumbs>
-                    <app-task-title></app-task-title>
-                    <app-task-status></app-task-status>
-                    <app-task-author></app-task-author>
-                </article>
-                <article class="task-block">
-                    <app-task-breadcrumbs></app-task-breadcrumbs>
-                    <app-task-title></app-task-title>
-                    <app-task-status></app-task-status>
-                    <app-task-author></app-task-author>
-                </article>
         </div> 
     </div>
 </section>  

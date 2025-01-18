@@ -1,14 +1,14 @@
 <div class="task-status-container">
 
     <div class="status-color">
-        @for (status of statusArray; track statusArray.values) {
+        @for (status of statusList; track status) {
             <div class="status-icon" [ngClass]="{
-                'class0': status === enumStatus.NoStatus,
-                'class1': status === enumStatus.Frontend,
-                'class2': status === enumStatus.Backend,
-                'class3': status === enumStatus.Testing,
-                'class4': status === enumStatus.Design,
-                'class5': status === enumStatus.Analytics,
+                'class0': status.title === enumStatus.NoStatus,
+                'class1': status.title === enumStatus.Frontend,
+                'class2': status.title === enumStatus.Backend,
+                'class3': status.title === enumStatus.Testing,
+                'class4': status.title === enumStatus.Design,
+                'class5': status.title === enumStatus.Analytics,
               }">
             </div>
             } 

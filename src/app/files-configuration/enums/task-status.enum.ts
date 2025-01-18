@@ -1,8 +1,9 @@
 export enum TaskStatus {
-    NoStatus = 0,
-    Frontend = 1,
-    Backend = 2,
-    Testing = 3,
-    Design = 4,
-    Analytics = 5
+    NoStatus = 'NoStatus',
+    Frontend = 'Frontend',
+    Backend = 'Backend',
+    Testing = 'Testing',
+    Design = 'Design',
+    Analytics = 'Analytics'
   }
+

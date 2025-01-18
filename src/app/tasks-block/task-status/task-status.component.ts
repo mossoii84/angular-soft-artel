@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TaskStatus } from '../../files-configuration/enums/task-status.enum';
 
 @Component({
@@ -9,19 +9,19 @@ import { TaskStatus } from '../../files-configuration/enums/task-status.enum';
   styleUrl: './task-status.component.scss'
 })
 export class TaskStatusComponent implements OnInit{
- 
+  @Input() statusList:any;
   enumStatus = TaskStatus;  // Экспортируем enum в шаблон
 
-  statusArray:TaskStatus[] = [];
+  // statusArray:TaskStatus[] = [];
 
     ngOnInit(): void {
-      if(this.statusArray.length <=4){
-        this.statusArray.push(1);
-        this.statusArray.push(2);
-        this.statusArray.push(2);
-        this.statusArray.push(0);
-        console.log(this.statusArray)
-      }
+      // if(this.statusArray.length <=4){
+      //   this.statusArray.push(1);
+      //   this.statusArray.push(2);
+      //   this.statusArray.push(2);
+      //   this.statusArray.push(0);
+      //   console.log(this.statusArray)
+      // }
     }
 
     //myArray.pop();//удаляем посл эл

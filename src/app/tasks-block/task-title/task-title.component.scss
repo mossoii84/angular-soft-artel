@@ -1,6 +1,5 @@
 .task-title-container {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     padding: 6px 0;
 }
@@ -13,12 +12,14 @@
     }
 }
 .for-discription {
+    padding-right:5px ;
+    width: 100%;
     display: -webkit-box;         /* Создает блок с поддержкой многократных строк */
     -webkit-box-orient: vertical; /* Устанавливает ориентацию блока по вертикали */
     -webkit-line-clamp: 2;       /* Ограничивает количество строк */
     overflow: hidden;             /* Скрывает текст, который выходит за пределы */
     text-overflow: ellipsis;      /* Добавляет многоточие в конце */
-  //  height: 3.5em;                /* Высота блока (3 строки по 1.6em, это зависит от размера шрифта) */
+  
 }
 .for-task-number {    
     white-space: nowrap;

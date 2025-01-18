@@ -2,7 +2,7 @@
 .status-color{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+   gap:10px;
 }
 .status-icon {
     width: 24.5%;
@@ -11,5 +11,7 @@
 }
 .class0{background-color: grey}
 .class1{background-color: red}
-.class2{background-color: green}
+.class2{background-color: rgb(128, 0, 117)}
 .class3{background-color: blue}
+.class4{background-color: orange}
+.class5{background-color: green}
