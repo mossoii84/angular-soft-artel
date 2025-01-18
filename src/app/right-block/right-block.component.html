@@ -5,55 +5,30 @@
     <div class="inwork-container">
       <div class="right-block-article-title-work">В работе :</div>
 
-      <article class="task-block">
-        <app-task-breadcrumbs></app-task-breadcrumbs>
-        <app-task-title></app-task-title>
-        <app-task-status></app-task-status>
-        <app-task-author></app-task-author>
-      </article>
+    
+        <article class="task-block" *ngFor="let task of tasksList let i=index">
+          @if(i==0){
+            <app-task-breadcrumbs></app-task-breadcrumbs>
+            <app-task-title [taskName]=task.taskName taskId={{task.taskId}}/>
+            <app-task-status [statusList]=task.status></app-task-status>
+            <app-task-author [author]=task.author></app-task-author>
+          }
+        </article>
+    
     </div>
 
     <div class="pause-container">
       <div class="right-block-article-title">На паузе : 14</div>
-      <article class="task-block">
+     
+      <article class="task-block" *ngFor="let task of tasksList">
         <app-task-breadcrumbs></app-task-breadcrumbs>
-        <app-task-title></app-task-title>
-        <app-task-status></app-task-status>
-        <app-task-author></app-task-author>
+        <app-task-title [taskName]=task.taskName taskId={{task.taskId}}/>
+
+        <app-task-status [statusList]=task.status></app-task-status>
+        <app-task-author [author]=task.author></app-task-author>
       </article>
 
-      <article class="task-block">
-        <app-task-breadcrumbs></app-task-breadcrumbs>
-        <app-task-title></app-task-title>
-        <app-task-status></app-task-status>
-        <app-task-author></app-task-author>
-      </article>
-      <article class="task-block">
-        <app-task-breadcrumbs></app-task-breadcrumbs>
-        <app-task-title></app-task-title>
-        <app-task-status></app-task-status>
-        <app-task-author></app-task-author>
-      </article>
 
-      <article class="task-block">
-        <app-task-breadcrumbs></app-task-breadcrumbs>
-        <app-task-title></app-task-title>
-        <app-task-status></app-task-status>
-        <app-task-author></app-task-author>
-      </article>
-      <article class="task-block">
-        <app-task-breadcrumbs></app-task-breadcrumbs>
-        <app-task-title></app-task-title>
-        <app-task-status></app-task-status>
-        <app-task-author></app-task-author>
-      </article>
-
-      <article class="task-block">
-        <app-task-breadcrumbs></app-task-breadcrumbs>
-        <app-task-title></app-task-title>
-        <app-task-status></app-task-status>
-        <app-task-author></app-task-author>
-      </article>
     </div>
   </div>
 

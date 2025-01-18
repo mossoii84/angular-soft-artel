@@ -18,24 +18,17 @@ export class TaskComponent {
   iconsList = Iconslist;
 
   isOpen:boolean=true;
-  isOpen2:boolean=true;
+  isOpenNotReseived:boolean=true;
 
-  showBreadcrumbs:boolean | undefined;
-  showBreadcrumbs2:boolean | undefined;
+
   showBreadcrumbs3:boolean | undefined;
-  showBreadcrumbs4:boolean | undefined;
 
   openClose(){
     this.isOpen = !this.isOpen;
   }
-  openClose2(){
-    this.isOpen2 = !this.isOpen2;
+  openCloseNotReseived(){
+    this.isOpenNotReseived = !this.isOpenNotReseived;
   }
-
-
-
-
-
 
 
   tasksList = [

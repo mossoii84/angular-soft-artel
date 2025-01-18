@@ -5,9 +5,9 @@
             <div>Мои: 7</div>
     </div>
 
-    <div class="task-container" >
-        <div *ngIf="isOpen">
-
+    <div *ngIf="isOpen">
+        <div class="task-container" >
+    
                 <article class="task-block" *ngFor="let task of tasksList">
                     <app-task-breadcrumbs></app-task-breadcrumbs>
                     <app-task-title [taskName]=task.taskName taskId={{task.taskId}}/>
@@ -16,18 +16,23 @@
                     <app-task-author [author]=task.author></app-task-author>
                 </article>
 
-               
-                <!-- <article class="task-block">
-                    <app-task-breadcrumbs *ngIf="showBreadcrumbs3" [ngClass]="showBreadcrumbs3==true? 'readcrumbs' : '' "
-                    (mouseenter)="showBreadcrumbs3 = true"
-                    (mouseleave)="showBreadcrumbs3 = false" ></app-task-breadcrumbs>
-                    <app-task-title
-                        (mouseenter)="showBreadcrumbs3 = true" 
-                        (mouseleave)="showBreadcrumbs3 = false">
-                    </app-task-title>
-                    <app-task-status></app-task-status>
-                    <app-task-author></app-task-author>
-                </article> -->
+
+
+                <article class="task-block" *ngFor="let task of tasksList">
+                        <app-task-breadcrumbs 
+                            *ngIf="showBreadcrumbs3" 
+                            [ngClass]="showBreadcrumbs3==true? 'readcrumbs' : '' "
+                            (mouseenter)="showBreadcrumbs3 = true"
+                            (mouseleave)="showBreadcrumbs3 = false" 
+                        />
+                        <app-task-title [taskName]=task.taskName taskId={{task.taskId}}
+                            (mouseenter)="showBreadcrumbs3 = true" 
+                            (mouseleave)="showBreadcrumbs3 = false"
+                        />
+    
+                        <app-task-status [statusList]=task.status></app-task-status>
+                        <app-task-author [author]=task.author></app-task-author>
+                </article>
 
       
         </div> 
@@ -38,21 +43,22 @@
 
 
 <section>
-    <div (click)="openClose2()" class="title-task-block">
+    <div (click)="openCloseNotReseived()" class="title-task-block">
         <img [src]="iconsList.icondown" alt="">
         <div>Не назначенные: 9</div>
     </div>
 
-    <div class="task-container" >
-        <div *ngIf="isOpen2">
-            
-            <article class="task-block" *ngFor="let task of tasksList">
-                <app-task-breadcrumbs></app-task-breadcrumbs>
-                <app-task-title [taskName]=task.taskName taskId={{task.taskId}}/>
+    <div *ngIf="isOpenNotReseived">
+        <div class="task-container" >
 
-                <app-task-status [statusList]=task.status></app-task-status>
-                <app-task-author [author]=task.author></app-task-author>
-            </article>
+            <article class="task-block" *ngFor="let task of tasksList let i=index">
+                @if(i<=3){
+                  <app-task-breadcrumbs></app-task-breadcrumbs>
+                  <app-task-title [taskName]=task.taskName taskId={{task.taskId}}/>
+                  <app-task-status [statusList]=task.status></app-task-status>
+                  <app-task-author [author]=task.author></app-task-author>
+                }
+              </article>
                 
         </div> 
     </div>
