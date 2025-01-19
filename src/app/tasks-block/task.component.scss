@@ -15,17 +15,11 @@
   display: flex;
 }
 
-
-
-.breadcrumbs {
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 1s ease, transform 1s ease;
-  transition-delay: 1s;
+app-task-title {
+  cursor: pointer;
 }
 
-/* Появление при наведении на блок */
-.task-block:hover .breadcrumbs {
-  opacity: 1;
-  transform: translateY(0);
+app-task-author {
+  cursor: pointer;
 }
+

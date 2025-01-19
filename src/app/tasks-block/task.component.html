@@ -7,34 +7,36 @@
 
     <div *ngIf="isOpen">
         <div class="task-container" >
-    
-                <article class="task-block" *ngFor="let task of tasksList">
-                    <app-task-breadcrumbs></app-task-breadcrumbs>
-                    <app-task-title [taskName]=task.taskName taskId={{task.taskId}}/>
 
+        <article class="task-block" *ngFor="let task of tasksList; let i = index">
+            @if(i<6){
+                    @if(breadcrumbs && i===taskNumber) { 
+                            <app-task-breadcrumbs />
+                        }
+                        <app-task-title [taskName]=task.taskName [taskId]=task.taskId
+                                (mouseenter)="showBreadcrumbs(i)" 
+                                (mouseleave)="hideBreadcrumbs(i)" 
+                    />
+       
+                    
+                    @if(footerBtn && i===taskNumberFooterBtn) { 
+                        <div (mouseleave)="showFooterBtn(i)"
+                              style="display: flex; justify-content: space-around;" >
+                            <button style="padding: 5px 25px;">1</button>
+                            <button style="padding: 5px 25px;">{{i}}</button>
+                            <button style="padding: 5px 25px;">3</button>
+                        </div>
+                    }
+                    @else{ 
                     <app-task-status [statusList]=task.status></app-task-status>
-                    <app-task-author [author]=task.author></app-task-author>
-                </article>
+                    <app-task-author  [author]=task.author
+                            (mouseenter)="showFooterBtn(i)" 
+                    />
+                    }
+                                 
+            }
+        </article>
 
-
-
-                <article class="task-block" *ngFor="let task of tasksList">
-                        <app-task-breadcrumbs 
-                            *ngIf="showBreadcrumbs3" 
-                            [ngClass]="showBreadcrumbs3==true? 'readcrumbs' : '' "
-                            (mouseenter)="showBreadcrumbs3 = true"
-                            (mouseleave)="showBreadcrumbs3 = false" 
-                        />
-                        <app-task-title [taskName]=task.taskName taskId={{task.taskId}}
-                            (mouseenter)="showBreadcrumbs3 = true" 
-                            (mouseleave)="showBreadcrumbs3 = false"
-                        />
-    
-                        <app-task-status [statusList]=task.status></app-task-status>
-                        <app-task-author [author]=task.author></app-task-author>
-                </article>
-
-      
         </div> 
     </div>
 
@@ -48,18 +50,52 @@
         <div>Не назначенные: 9</div>
     </div>
 
-    <div *ngIf="isOpenNotReseived">
+    <ng-container *ngIf="isOpenNotReseived">
         <div class="task-container" >
-
-            <article class="task-block" *ngFor="let task of tasksList let i=index">
-                @if(i<=3){
-                  <app-task-breadcrumbs></app-task-breadcrumbs>
-                  <app-task-title [taskName]=task.taskName taskId={{task.taskId}}/>
-                  <app-task-status [statusList]=task.status></app-task-status>
-                  <app-task-author [author]=task.author></app-task-author>
+            
+            <article class="task-block" *ngFor="let task of tasksList; let i = index">
+                @if(i<6){
+                        @if(breadcrumbs && i===taskNumber) { 
+                                <app-task-breadcrumbs />
+                            }
+                            <app-task-title [taskName]=task.taskName [taskId]=task.taskId
+                                    (mouseenter)="showBreadcrumbs(i)" 
+                                    (mouseleave)="hideBreadcrumbs(i)" 
+                        />
+           
+                        
+                        @if(footerBtn && i===taskNumberFooterBtn) { 
+                            <div (mouseleave)="showFooterBtn(i)"
+                                  style="display: flex; justify-content: space-around;" >
+                                <button style="padding: 5px 25px;">1</button>
+                                <button style="padding: 5px 25px;">{{i}}</button>
+                                <button style="padding: 5px 25px;">3</button>
+                            </div>
+                        }
+                        @else{ 
+                        <app-task-status [statusList]=task.status></app-task-status>
+                        <app-task-author  [author]=task.author
+                                (mouseenter)="showFooterBtn(i)" 
+                        />
+                        }
+                                     
                 }
-              </article>
-                
+            </article>
+
+
+        <!-- <article class="task-block" *ngFor="let task of tasksList; let i = index">
+                @if(i>6){
+                    @if(breadcrumbs && i===taskNumber) { 
+                        <app-task-breadcrumbs />
+                    }
+                    <app-task-title [taskName]=task.taskName [taskId]=task.taskId
+                            (mouseenter)="showBreadcrumbs(i)" 
+                            (mouseleave)="hideBreadcrumbs(i)" 
+                    />
+                    <app-task-status [statusList]=task.status></app-task-status>
+                    <app-task-author [author]=task.author></app-task-author>
+                }
+        </article> -->
         </div> 
-    </div>
+    </ng-container>
 </section>  
