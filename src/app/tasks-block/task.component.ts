@@ -24,7 +24,7 @@ export class TaskComponent implements OnInit {
 
 
   breadcrumbs:boolean = false;
-  taskNumber:number | undefined;
+  taskNumber:number | undefined;  
   timeoutBreadcrumbs: any = null;
 
   // footerBtn$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
@@ -43,16 +43,16 @@ export class TaskComponent implements OnInit {
     this.isOpenNotReseived = !this.isOpenNotReseived;
   }
   
-  showBreadcrumbs(i:number) {
+  showBreadcrumbs(id:number) {
     this.timeoutBreadcrumbs = setTimeout(() => {
       if(!this.breadcrumbs){
         this.breadcrumbs = true;
-        this.taskNumber=i;
+        this.taskNumber=id;
       }
     }, 600);   
   }
 
-  hideBreadcrumbs(i:number) {
+  hideBreadcrumbs() {
     clearTimeout(this.timeoutBreadcrumbs);
     setTimeout(() => {
       if(this.breadcrumbs){
@@ -63,9 +63,9 @@ export class TaskComponent implements OnInit {
 
 
 
-  showFooterBtn(i:number){
+  showFooterBtn(id:number){
         this.footerBtn=!this.footerBtn;
-        this.taskNumberFooterBtn=i;
+        this.taskNumberFooterBtn=id;
   }
 
 
@@ -166,7 +166,7 @@ export class TaskComponent implements OnInit {
     {  id:7,
       taskName: 'Исправление ошибок в адаптивности',
       author: 'Ольга Кузнецова',
-      taskId: 'TR-336',
+      taskId: 'TR-337',
       timeRequired: '2ч',
       status: [
         { title: 'Frontend'},
@@ -177,9 +177,10 @@ export class TaskComponent implements OnInit {
       type: 'Frontend'
     },
     {  id:8,
-      taskName: 'Исправление ошибок в адаптивности',
+      taskName: 'Фермер должен переправить через реку трёх своих "пассажиров": волка, козу и капусту.'+
+      'У фермера есть лодка, но в ней он может перевозить только одного пассажира за раз. Есть несколько ограничений:',
       author: 'Ольга Кузнецова',
-      taskId: 'TR-336',
+      taskId: 'TR-338',
       timeRequired: '2ч',
       status: [
         { title: 'Frontend'},
@@ -192,7 +193,7 @@ export class TaskComponent implements OnInit {
     {  id:9,
       taskName: 'Исправление ошибок в адаптивности',
       author: 'Ольга Кузнецова',
-      taskId: 'TR-336',
+      taskId: 'TR-339',
       timeRequired: '2ч',
       status: [
         { title: 'Frontend'},
@@ -205,7 +206,7 @@ export class TaskComponent implements OnInit {
     {  id:10,
       taskName: 'Исправление ошибок в адаптивности',
       author: 'Ольга Кузнецова',
-      taskId: 'TR-336',
+      taskId: 'TR-340',
       timeRequired: '2ч',
       status: [
         { title: 'Frontend'},

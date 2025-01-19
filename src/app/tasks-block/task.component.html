@@ -8,34 +8,36 @@
     <div *ngIf="isOpen">
         <div class="task-container" >
 
-        <article class="task-block" *ngFor="let task of tasksList; let i = index">
-            @if(i<6){
-                    @if(breadcrumbs && i===taskNumber) { 
-                            <app-task-breadcrumbs />
+        @for(task of tasksList; track task.taskId){
+            <article class="task-block">
+                 @if(task.id < 6){
+                        @if(breadcrumbs && task.id === taskNumber) { 
+                                <app-task-breadcrumbs />
+                            }
+                            <app-task-title [taskName]=task.taskName [taskId]=task.taskId
+                                    (mouseenter)="showBreadcrumbs(task.id)" 
+                                    (mouseleave)="hideBreadcrumbs()" 
+                        />
+        
+                        
+                         @if(footerBtn && task.id===taskNumberFooterBtn) { 
+                            <div (mouseleave)="showFooterBtn(task.id)"
+                                style="display: flex; justify-content: space-around;" >
+                                <button style="padding: 5px 25px;">{{task.id}}</button>
+                                <button style="padding: 5px 25px;">{{task.taskId}}</button>
+                                <button style="padding: 5px 25px;">3</button>
+                            </div>
                         }
-                        <app-task-title [taskName]=task.taskName [taskId]=task.taskId
-                                (mouseenter)="showBreadcrumbs(i)" 
-                                (mouseleave)="hideBreadcrumbs(i)" 
-                    />
-       
-                    
-                    @if(footerBtn && i===taskNumberFooterBtn) { 
-                        <div (mouseleave)="showFooterBtn(i)"
-                              style="display: flex; justify-content: space-around;" >
-                            <button style="padding: 5px 25px;">1</button>
-                            <button style="padding: 5px 25px;">{{i}}</button>
-                            <button style="padding: 5px 25px;">3</button>
-                        </div>
-                    }
-                    @else{ 
-                    <app-task-status [statusList]=task.status></app-task-status>
-                    <app-task-author  [author]=task.author
-                            (mouseenter)="showFooterBtn(i)" 
-                    />
-                    }
-                                 
-            }
-        </article>
+                        @else{ 
+                        <app-task-status [statusList]=task.status></app-task-status>
+                        <app-task-author  [author]=task.author
+                                (mouseenter)="showFooterBtn(task.id)" 
+                        />
+                        }
+                                    
+                }
+            </article>
+        }
 
         </div> 
     </div>
@@ -53,35 +55,36 @@
     <ng-container *ngIf="isOpenNotReseived">
         <div class="task-container" >
             
-            <article class="task-block" *ngFor="let task of tasksList; let i = index">
-                @if(i<6){
-                        @if(breadcrumbs && i===taskNumber) { 
+            @for(task of tasksList; track task.id) { 
+            <article class="task-block">
+                @if(task.id >= 6){
+                        @if(breadcrumbs && task.id === taskNumber) { 
                                 <app-task-breadcrumbs />
                             }
                             <app-task-title [taskName]=task.taskName [taskId]=task.taskId
-                                    (mouseenter)="showBreadcrumbs(i)" 
-                                    (mouseleave)="hideBreadcrumbs(i)" 
+                                    (mouseenter)="showBreadcrumbs(task.id)" 
+                                    (mouseleave)="hideBreadcrumbs()" 
                         />
            
                         
-                        @if(footerBtn && i===taskNumberFooterBtn) { 
-                            <div (mouseleave)="showFooterBtn(i)"
+                        @if(footerBtn && task.id === taskNumberFooterBtn) { 
+                            <div (mouseleave)="showFooterBtn(task.id)"
                                   style="display: flex; justify-content: space-around;" >
-                                <button style="padding: 5px 25px;">1</button>
-                                <button style="padding: 5px 25px;">{{i}}</button>
+                                <button style="padding: 5px 25px;">{{task.id}}</button>
+                                <button style="padding: 5px 25px;">{{task.taskId}}</button>
                                 <button style="padding: 5px 25px;">3</button>
                             </div>
                         }
                         @else{ 
                         <app-task-status [statusList]=task.status></app-task-status>
                         <app-task-author  [author]=task.author
-                                (mouseenter)="showFooterBtn(i)" 
+                                (mouseenter)="showFooterBtn(task.id)" 
                         />
                         }
                                      
                 }
             </article>
-
+        }
 
         <!-- <article class="task-block" *ngFor="let task of tasksList; let i = index">
                 @if(i>6){
