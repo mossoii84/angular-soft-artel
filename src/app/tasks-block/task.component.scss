@@ -15,11 +15,10 @@
   display: flex;
 }
 
-app-task-title {
-  cursor: pointer;
-}
-
+app-task-title,
+app-task-breadcrumbs,
 app-task-author {
   cursor: pointer;
 }
+
 

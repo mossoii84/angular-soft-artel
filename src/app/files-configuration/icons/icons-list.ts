@@ -10,6 +10,9 @@ export interface Icons  {
   bug:string,
   category:string,
   test:string,
+  flash1:'/assets/icons/buttons/flash1.svg',
+  flash2:'/assets/icons/buttons/flash2.svg',
+  flash3:'/assets/icons/buttons/flash3.svg',
 };
 export const Iconslist: Icons = {
     dev: '/assets/icons/zadachi/dev.svg',
@@ -22,5 +25,8 @@ export const Iconslist: Icons = {
     category:'/assets/icons/raznoe/category.svg',
     test:'/assets/icons/raznoe/test.svg',
     ios: '/assets/icons/ios/ios.svg',
+    flash1:'/assets/icons/buttons/flash1.svg',
+    flash2:'/assets/icons/buttons/flash2.svg',
+    flash3:'/assets/icons/buttons/flash3.svg',
 };
 

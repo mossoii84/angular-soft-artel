@@ -6,11 +6,12 @@ import { TaskTitleComponent } from './task-title/task-title.component';
 import { AccordionModule } from 'primeng/accordion';
 import { CommonModule } from '@angular/common';
 import { Iconslist } from '../files-configuration/icons/icons-list';
+import { TaskButtonsComponent } from "./task-buttons/task-buttons.component";
 
 @Component({
   selector: 'app-task',
   standalone: true,
-  imports: [CommonModule, TaskAuthorComponent, TaskBreadcrumbsComponent,TaskStatusComponent, TaskTitleComponent, AccordionModule],
+  imports: [CommonModule, TaskAuthorComponent, TaskBreadcrumbsComponent, TaskStatusComponent, TaskTitleComponent, AccordionModule, TaskButtonsComponent],
   templateUrl: './task.component.html',
   styleUrl: './task.component.scss'
 })
@@ -134,13 +135,13 @@ export class TaskComponent {
       type: 'Design'
     },
     {  id:5,
-      taskName: 'Анализ пользовательского поведения',
+      taskName: 'Как и в случае планирования, подход в Agile к выполнению задач также является итеративным и фокусируется на завершении отдельных функций и задач — причем эти функции и задачи должны быть направлены на то, чтобы',
       author: 'Валерий Чернов',
       taskId: 'TR-335',
       timeRequired: '5ч',
       status: [
-        { title: 'Frontend'},
-        { title: 'Backend'},
+        { title: 'NoStatus'},
+        { title: 'Analytics'},
         { title: 'Testing'},
         { title: 'NoStatus'}
       ],
@@ -161,12 +162,12 @@ export class TaskComponent {
     },
 
     {  id:7,
-      taskName: 'Исправление ошибок в адаптивности',
+      taskName: 'Как и в случае планирования, подход в Agile к выполнению задач также является итеративным и фокусируется на завершении отдельных функций и задач — причем эти функции и задачи должны быть направлены на то, чтобыИсправление ошибок в адаптивности',
       author: 'Ольга Кузнецова',
       taskId: 'TR-337',
       timeRequired: '2ч',
       status: [
-        { title: 'Frontend'},
+        { title: 'Testing'},
         { title: 'Backend'},
         { title: 'Testing'},
         { title: 'NoStatus'}
@@ -180,7 +181,7 @@ export class TaskComponent {
       taskId: 'TR-338',
       timeRequired: '2ч',
       status: [
-        { title: 'Frontend'},
+        { title: 'Analytics'},
         { title: 'Backend'},
         { title: 'Testing'},
         { title: 'NoStatus'}
@@ -201,12 +202,12 @@ export class TaskComponent {
       type: 'Frontend'
     },
     {  id:10,
-      taskName: 'Исправление ошибок в адаптивности',
+      taskName: 'Как и в случае планирования, подход в Agile к выполнению задач также является итеративным и фокусируется на завершении отдельных функций и задач — причем эти функции и задачи должны быть направлены на то, чтобы',
       author: 'Ольга Кузнецова',
       taskId: 'TR-340',
       timeRequired: '2ч',
       status: [
-        { title: 'Frontend'},
+        { title: 'Analytics'},
         { title: 'Backend'},
         { title: 'Testing'},
         { title: 'NoStatus'}

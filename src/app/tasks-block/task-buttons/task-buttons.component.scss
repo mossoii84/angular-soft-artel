@@ -1,0 +1,52 @@
+.buttons-container {
+  display: flex;
+  gap: 10px;
+  padding-bottom:10px ;
+  img {
+    padding: 0 5px;
+  }
+
+  .btn-left {
+    background: #ce00000d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 20px;
+    border-radius: 6px;
+    flex-grow: 1;
+    color: #ce0000;
+  }
+
+  .btn-mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+    border-radius: 6px;
+    padding: 14px 20px;
+    background: #16a4e30d;
+    color: #16a4e3;
+  }
+
+  .btn-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1bba690d;
+    color: #1bba69;
+    padding: 14px 20px;
+    border-radius: 6px;
+    flex-grow: 1;
+  }
+
+  .btn-left:hover {
+    background: #ce000033;
+  }
+  .btn-mid:hover {
+    background: #16a4e333;
+  }
+  .btn-right:hover {
+    background: #1bba6933;
+
+  }
+}
