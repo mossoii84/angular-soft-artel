@@ -9,6 +9,8 @@ import { ResponsiveConfComponent } from '../files-configuration/responsive-conf/
 import { RightBlockMenuComponent } from "../right-block-menu/right-block-menu.component";
 import { HeaderWebComponent } from "../headers/header-web/header-web.component";
 import { LeftBlockMenuComponent } from "../left-block-menu/left-block-menu.component";
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+
 
 @Component({
   selector: 'app-home-page',
@@ -16,7 +18,7 @@ import { LeftBlockMenuComponent } from "../left-block-menu/left-block-menu.compo
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
-export class HomePageComponent implements OnInit{
+export class HomePageComponent {
 
     confService = inject(ConfService);
     subscription!: Subscription;
@@ -24,19 +26,13 @@ export class HomePageComponent implements OnInit{
     conf = Conf;
     versionCurrentRange: string | undefined;
     constructor(){
-      this.subscription = this.confService.getRange().subscribe(
+      this.subscription = this.confService.getRange()
+      .pipe(takeUntilDestroyed())
+      .subscribe(
         data => { this.versionCurrentRange=data
        console.log(this.versionCurrentRange)
       });
     }
 
-    ngOnInit(): void {
-      
-    }
 
-
-
-    ngOnDestroy(): void {
-      this.subscription.unsubscribe();
-    }
 }

@@ -6,7 +6,6 @@ import { TaskTitleComponent } from './task-title/task-title.component';
 import { AccordionModule } from 'primeng/accordion';
 import { CommonModule } from '@angular/common';
 import { Iconslist } from '../files-configuration/icons/icons-list';
-import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-task',
@@ -15,7 +14,7 @@ import { BehaviorSubject } from 'rxjs';
   templateUrl: './task.component.html',
   styleUrl: './task.component.scss'
 })
-export class TaskComponent implements OnInit {
+export class TaskComponent {
 
   iconsList = Iconslist;
 
@@ -27,19 +26,17 @@ export class TaskComponent implements OnInit {
   taskNumber:number | undefined;  
   timeoutBreadcrumbs: any = null;
 
-  // footerBtn$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
   footerBtn=true;
   timeoutFooterBtn: any = null;
   taskNumberFooterBtn:number | undefined;
 
-  ngOnInit(): void {
-  }
+ 
 
 
   openClose(){
     this.isOpen = !this.isOpen;
   }
-  openCloseNotReseived(){
+  openCloseNotReseived() {
     this.isOpenNotReseived = !this.isOpenNotReseived;
   }
   
