@@ -1,59 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
 
 @font-face {
-  font-family: 'Roboto'; 
-  src: url('/assets/font/Roboto-VariableFont_wdth,wght') format('truetype'); 
-  font-weight: normal; 
-  font-style: normal; 
-}
-  
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  :root {
-    --Color-bg-grayDark: #F1F2F4; //главный фон
-
-    --Color-red: #CE0000;
-    --Color-active_blue: #16A4E3;
-
-
-    --Color-text-text-text: #5E5E5E; 
-    --Color-text-text-secondary: #7E7E7E;
-
-    --color-bg-border-divider: #0000000A; //обводка
-    --Color-bg-selected_light: #FFFFFF;
-    --Color-divider: #E0E0E0;
-    --Color-bg-blocks: #F9FAFC;
-
-    --font-size-small: 13px;
+  font-family: "Roboto";
+  src: url("/assets/font/Roboto-VariableFont_wdth,wght") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-  html,
-  body {
-    font-family: 'Roboto', sans-serif; 
-    font-size:14px;
-    font-weight: 500;
-    line-height: 21px;
-    height: 100vh;
-    background-color: var(--Color-bg-grayDark, #F1F2F4);
-  }
-  a {
-    color: inherit;  /* Убирает синий цвет */
-    text-decoration: none;
-  }
-  
-  ul {
-    list-style: none; /* Убираем маркеры у списков */
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Color-bg-grayDark: #f1f2f4; //главный фон
 
+  --Color-red: #ce0000;
+  --Color-active_blue: #16a4e3;
 
+  --Color-text-text-text: #5e5e5e;
+  --Color-text-text-secondary: #7e7e7e;
 
+  --color-bg-border-divider: #0000000a; //обводка
+  --Color-bg-selected_light: #ffffff;
+  --Color-divider: #e0e0e0;
+  --Color-bg-blocks: #f9fafc;
 
+  --font-size-small: 13px;
+}
 
-  //********************************* global styles *****************************//
-  .rond-image {
-    border-radius: 24px;
-  }
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  height: 100vh;
+  background-color: var(--Color-bg-grayDark, #f1f2f4);
+}
+a {
+  color: inherit; /* Убирает синий цвет */
+  text-decoration: none;
+}
+
+ul {
+  list-style: none; /* Убираем маркеры у списков */
+}
+
+//********************************* global styles *****************************//
+.rond-image {
+  border-radius: 24px;
+}
