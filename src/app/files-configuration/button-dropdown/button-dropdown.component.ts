@@ -10,7 +10,6 @@ import { Component, Input } from '@angular/core';
 export class ButtonDropdownComponent {
   @Input() btnTitle: string = "";
   @Input() listTitle: string = "";
-  // @Input() items: string[] = []; 
   @Input() items: Array<{ title: string; image: string; }> | undefined;
   @Input() btnWidth:string="100px";
   @Input() textColor:string="black";

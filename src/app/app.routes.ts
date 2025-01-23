@@ -4,7 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 
 export const routes: Routes = [
   {
-    path: '',  // Корневой маршрут
+    path: '',  
     component: HomePageComponent,
     children: [
       {

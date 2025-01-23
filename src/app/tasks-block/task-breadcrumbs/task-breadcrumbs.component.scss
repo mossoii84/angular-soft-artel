@@ -1,33 +1,30 @@
 .task-dreadcrumbs-container {
+  display: flex;
+  padding: 6px 0 0 0;
+  color: var(--Color-text-text-text, #5e5e5e);
+  .simpl {
+    margin: 0 4px 0 10px;
+    font-size: clamp(14px, 2vw, 16px);
+  }
+  .for-dreadcrumbs-icons {
+    height: 30px;
     display: flex;
-    padding: 6px 0 0 0;
-    color: var( --Color-text-text-text,#5E5E5E );
-    .simpl { 
-        margin:0 4px 0 10px;
-        font-size: clamp(14px, 2vw, 16px);
-    }
-    .for-dreadcrumbs-icons {
-        height: 30px;
-        display: flex;
-        align-items: center;
-        // padding: 0 2px;
+    align-items: center;
 
-        img {
-            height: 16px;
-            padding: 0 4px;
+    img {
+      height: 16px;
+      padding: 0 4px;
+    }
+  }
+  .for-dreadcrumbs-discript {
+    display: flex;
+    align-items: center;
+  }
 
-        }       
-    
-    }
-    .for-dreadcrumbs-discript {
-        display: flex;
-        align-items: center;
-    }
-
-    .flash {
-        font-size: 16px;
-    }
-    .text-discript {
-        font-size: clamp(10px, 2vw, 16px);
-    }
+  .flash {
+    font-size: 16px;
+  }
+  .text-discript {
+    font-size: clamp(10px, 2vw, 16px);
+  }
 }

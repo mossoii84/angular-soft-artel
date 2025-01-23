@@ -10,19 +10,13 @@ import { TaskStatus } from '../../files-configuration/enums/task-status.enum';
 })
 export class TaskStatusComponent implements OnInit{
   @Input() statusList:any;
-  enumStatus = TaskStatus;  // Экспортируем enum в шаблон
+  enumStatus = TaskStatus;  
 
-  // statusArray:TaskStatus[] = [];
+
 
     ngOnInit(): void {
-      // if(this.statusArray.length <=4){
-      //   this.statusArray.push(1);
-      //   this.statusArray.push(2);
-      //   this.statusArray.push(2);
-      //   this.statusArray.push(0);
-      //   console.log(this.statusArray)
-      // }
+
     }
 
-    //myArray.pop();//удаляем посл эл
+
 }

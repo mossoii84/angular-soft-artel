@@ -14,7 +14,7 @@ export class TaskTitleComponent implements OnInit {
   @Input() taskId="";
   
 
-  enumType = TaskType;  // Экспортируем enum в шаблон
+  enumType = TaskType;  
   iconsList = Iconslist;
 
 

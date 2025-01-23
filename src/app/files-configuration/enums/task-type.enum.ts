@@ -1,5 +1,5 @@
 export enum TaskType {
-    NoStatus = 0, //тут нужно добавить картинки   Home = 'home.png',    
+    NoStatus = 0,
     Frontend = 1,
     Backend = 2,
     Testing = 3,
