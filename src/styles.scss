@@ -12,20 +12,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
+:host {
   --Color-bg-grayDark: #f1f2f4; //главный фон
-
   --Color-red: #ce0000;
   --Color-active_blue: #16a4e3;
-
   --Color-text-text-text: #5e5e5e;
   --Color-text-text-secondary: #7e7e7e;
-
   --color-bg-border-divider: #0000000a; //обводка
   --Color-bg-selected_light: #ffffff;
   --Color-divider: #e0e0e0;
   --Color-bg-blocks: #f9fafc;
-
   --font-size-small: 13px;
 }
 
